@@ -1,0 +1,4 @@
+type: object
+properties:
+  Name:
+    $ref: "./common.schema.yaml#/properties/Name"

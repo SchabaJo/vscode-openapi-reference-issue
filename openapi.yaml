@@ -1,0 +1,24 @@
+openapi: '3.0.2'
+info:
+  title: Reproducible Error
+  version: '1.0'
+servers:
+  - url: https://example.com/v1
+paths:
+  /test:
+    post:
+      description: ""
+      parameters: []
+      requestBody:
+        description: Request Payload
+        content:
+          "application/json":
+            schema:
+              $ref: "./request.schema.yaml"
+      responses:
+        "200":
+          description: OK
+          content:
+            "application/json":
+              schema:
+                $ref: "./response.schema.yaml"
